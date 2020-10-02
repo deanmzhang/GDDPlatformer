@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1449515119213312042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6684217688317205824}
+  - component: {fileID: 5246977258581042716}
+  m_Layer: 0
+  m_Name: CraftingManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6684217688317205824
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449515119213312042}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5246977258581042716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449515119213312042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6aedfcc21ec046b786c95ce8a4aac5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allResources:
+  - name: Scrap
+    icon: {fileID: 21300000, guid: 434123eabbc284a82b19e4e1258fb031, type: 3}
+  allCraftables:
+  - name: Crate
+    prefab: {fileID: 3706511442524677590, guid: 1dba0d72fece84bbaa181ff28ca51ec1,
+      type: 3}
+    icon: {fileID: 0}
+    recipe:
+    - resourceId: 0
+      count: 4
+  - name: Bridge
+    prefab: {fileID: 3706511442524677590, guid: 1dba0d72fece84bbaa181ff28ca51ec1,
+      type: 3}
+    icon: {fileID: 0}
+    recipe:
+    - resourceId: 0
+      count: 100
+  resourceDrop: {fileID: 8571729041164956809, guid: 27e9288544ae84a17807afb960143ad9,
+    type: 3}
+  craftBlockers:
+    serializedVersion: 2
+    m_Bits: 0
